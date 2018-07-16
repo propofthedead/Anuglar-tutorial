@@ -6,8 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Foster Stulen';
+  title:string = 'Foster Stulen';
   sometext='my text';
+  names: string[]=[
+    "Michael","Dan","Anna","Foster","Marcus","Jon","Larry","William"
+  ];
 
   onclick():void{
     this.sometext="this is some text";
