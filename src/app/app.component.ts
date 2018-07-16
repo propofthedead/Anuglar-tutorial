@@ -11,13 +11,18 @@ export class AppComponent {
   names=[];
   name: string;
   nbr:number;
-
+  amount:number;
   add(): void{
     let obj= {
       name: this.name,
-      nbr: this.nbr
+      nbr: this.nbr,
+      amount: this.amount
     };
     this.names.push(obj);
+    this.name="";
+    this.nbr=null;
+    this.amount=null;
+
     console.log(this.names);
   }
   dispName:boolean=true;

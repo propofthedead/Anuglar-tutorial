@@ -2,12 +2,17 @@
   <h1>{{title}}</h1>
   <input type="text" [(ngModel)]="name" placeholder="Name">
   <input type="number" [(ngModel)]="nbr" placeholder="Nbr">
+  <input type="number" [(ngModel)]= "amount" placeholder="Amount">
   <button (click)="add()">Add</button>
 
   <p></p>
 
   <table>
-    <tr><td>Name</td><td>Nbr</td></tr>
-    <tr *ngFor="let n of names"><td>{{n.name}}</td><td>{{n.nbr}}</td></tr>
+    <tr><td>Name</td><td>Nbr</td><td>Amt</td></tr>
+    <tr *ngFor="let n of names">
+      <td>{{n.name}}</td>
+      <td>{{n.nbr}}</td>
+      <td>{{n.amount}}</td>
+    </tr>
   </table>
 </div>
