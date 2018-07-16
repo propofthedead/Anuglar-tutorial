@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Foster Stulen';
+  sometext='my text';
+
+  onclick():void{
+    this.sometext="this is some text";
+  }
+
 }
