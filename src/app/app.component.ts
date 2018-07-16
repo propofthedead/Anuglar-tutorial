@@ -8,17 +8,20 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title:string = 'Foster Stulen';
   sometext='my text';
-  names=[
-    {name: "Michael",   tag:4},
-    {name: "Dan",       tag:3},
-    {name: "Anna",      tag:1},
-    {name:"Foster",     tag:4},
-    {name:"Marcus",     tag:4},
-    {name:"Jonathan",   tag:4},
-    {name: "Larry",     tag:3}
-  ];
-  dispName:boolean=true;
+  names=[];
+  name: string;
+  nbr:number;
 
+  add(): void{
+    let obj= {
+      name: this.name,
+      nbr: this.nbr
+    };
+    this.names.push(obj);
+    console.log(this.names);
+  }
+  dispName:boolean=true;
+  aMessage= "Starting Message Losers";
   toggle(): void {
     this.dispName=!this.dispName;
   }

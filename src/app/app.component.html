@@ -1,21 +1,13 @@
-<h1>{{title}}</h1>
-<p>
-  <button (click)="onclick()">Click me!</button>
-  <label>{{sometext}}</label>
-</p>
-<button (click)="toggle()">Toggle</button>
-<div *ngIf="dispName">
-  <ul>
-    <li *ngFor= "let name of names">
-      The name is {{name.name}}
-      They are a 
-      <span [ngSwitch]="name.tag">
-        <span *ngSwitchCase=1>FV</span>
-        <span *ngSwitchCase=2>FNV</span>
-        <span *ngSwitchCase=3>MV</span>
-        <span *ngSwitchCase=4>MNV</span>
-      </span>
-    </li>
-  </ul>
+<div>
+  <h1>{{title}}</h1>
+  <input type="text" [(ngModel)]="name" placeholder="Name">
+  <input type="number" [(ngModel)]="nbr" placeholder="Nbr">
+  <button (click)="add()">Add</button>
 
+  <p></p>
+
+  <table>
+    <tr><td>Name</td><td>Nbr</td></tr>
+    <tr *ngFor="let n of names"><td>{{n.name}}</td><td>{{n.nbr}}</td></tr>
+  </table>
 </div>
