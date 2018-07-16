@@ -1,0 +1,20 @@
+<div>
+  <h1>Resume of {{name}} at {{address}},{{email}}, {{phone}}</h1>
+<section>
+  <h3>Skills  </h3>
+  <ul>
+    <li *ngFor= "let skill of skills">{{skill}}</li>
+  </ul>
+</section>
+<section>
+  <h3>Experience</h3>
+  <table>
+    <tr><th>Company</th><th>Position</th><th>Start/End</th></tr>
+    <tr *ngFor="let job of experiences">
+      <td>{{job.company}}</td>
+      <td>{{job.position}}</td>
+      <td>{{job.start}}-{{job.end}}</td>
+    </tr>
+  </table>
+</section>
+</div>
