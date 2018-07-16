@@ -11,6 +11,11 @@ export class AppComponent {
   names: string[]=[
     "Michael","Dan","Anna","Foster","Marcus","Jon","Larry","William"
   ];
+  dispName:boolean=true;
+
+  toggle(): void {
+    this.dispName=!this.dispName;
+  }
 
   onclick():void{
     this.sometext="this is some text";

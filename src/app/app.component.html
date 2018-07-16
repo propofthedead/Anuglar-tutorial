@@ -3,8 +3,14 @@
   <button (click)="onclick()">Click me!</button>
   <label>{{sometext}}</label>
 </p>
-<div>
+<button (click)="toggle()">Toggle</button>
+<div *ngIf="dispName">
   <ul>
-    <li *ngFor= "let name of names">{{name}}</li>
+    <li *ngFor= "let name of names">{{name}}
+      <a href="http://www.maxtrain.com">
+        <span>This is MAX</span>
+      </a>
+    </li>
   </ul>
+
 </div>
