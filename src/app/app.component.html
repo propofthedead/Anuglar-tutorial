@@ -6,10 +6,15 @@
 <button (click)="toggle()">Toggle</button>
 <div *ngIf="dispName">
   <ul>
-    <li *ngFor= "let name of names">{{name}}
-      <a href="http://www.maxtrain.com">
-        <span>This is MAX</span>
-      </a>
+    <li *ngFor= "let name of names">
+      The name is {{name.name}}
+      They are a 
+      <span [ngSwitch]="name.tag">
+        <span *ngSwitchCase=1>FV</span>
+        <span *ngSwitchCase=2>FNV</span>
+        <span *ngSwitchCase=3>MV</span>
+        <span *ngSwitchCase=4>MNV</span>
+      </span>
     </li>
   </ul>
 

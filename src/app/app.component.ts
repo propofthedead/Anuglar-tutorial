@@ -8,8 +8,14 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title:string = 'Foster Stulen';
   sometext='my text';
-  names: string[]=[
-    "Michael","Dan","Anna","Foster","Marcus","Jon","Larry","William"
+  names=[
+    {name: "Michael",   tag:4},
+    {name: "Dan",       tag:3},
+    {name: "Anna",      tag:1},
+    {name:"Foster",     tag:4},
+    {name:"Marcus",     tag:4},
+    {name:"Jonathan",   tag:4},
+    {name: "Larry",     tag:3}
   ];
   dispName:boolean=true;
 
