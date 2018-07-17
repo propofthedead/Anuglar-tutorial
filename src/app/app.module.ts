@@ -11,6 +11,7 @@ import { UserCreateComponent } from './user/user-create/user-create.component';
 import { CvComponent } from './cv/cv.component';
 import { CvExtendedComponent } from './cv-extended/cv-extended.component';
 import { CvAdsComponent } from './cv-ads/cv-ads.component';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CvAdsComponent } from './cv-ads/cv-ads.component';
     UserCreateComponent,
     CvComponent,
     CvExtendedComponent,
-    CvAdsComponent
+    CvAdsComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,FormsModule
